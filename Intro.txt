@@ -1,0 +1,18 @@
+Web development: It include three main components that are as follows
+
+1.HTML
+2.CSS
+3.JAVASCRIPT
+
+
+HTML: 
+    * It defines the overall physical structure of the Webpage(BODY).
+    * It stands for Hypertext Markup Language
+CSS: 
+    * It is used to add effects on the webpage or to beautify the webpage content and its structure(BEAUTY).
+    * It stands for cascading style sheets
+
+Javascript: 
+    * It is used to add logics to the website that is when a square or forward button is pressed what will happen and etc(BRAIN).
+    * It helps in making Dynamic websites
+
