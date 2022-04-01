@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+
+<body>
+    <h2>This is Forms tutorial</h2>
+    <form action="backend.php">
+        <!-- Now these input fields will be printed in single line.
+             To prevent this from happening we can use two ways:
+             1. div tag
+             2. br tag-->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="Myname" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="Myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="Myemail">
+        </div>
+        <br>
+        <div>
+            <input type="date" name="Mydate" id="">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="Mybonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible: <input type="checkbox" name="Myeligibilty">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">Other<input
+                type="radio" name="myGender">
+            <br>
+            <br>
+            Write about yourself: <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="Mycar" id="car">
+                <option value="lamb">Lamborghini</option>
+                <option value="J" selected>Jeep</option>
+                <option value="Maruti">Swift</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Submit now">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
