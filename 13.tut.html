@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+    <!-- <link rel="stylesheet" href="13.tutCSS.css"> -->
+
+    <!--  This below line of code is an example of internal CSS -->
+    <!--* In comparison bw inline, internal and external CSS, 
+          the one written after another takes more preference(bw internal and external) like in this case below,
+          because it will overwrite the previous written CSS wheter it is internal or external.
+        
+        *  And inline CSS takes the highest priority-->
+    <style>
+        /* This will only effect the tag which is used as selector here
+           that is it will effect the <p> tag */
+        p {
+            /* When !important is used it makes the CSS most important which cannot be overwritten */
+            color: magenta !important;
+            background-color: green !important;
+        }
+
+        /* This will only effect the tag which is used as selector here
+            that is it will effect the <h3> tag */
+        /* h3 {
+                    color: blue;
+                    background-color: pink
+                } */
+    </style>
+    <link rel="stylesheet" href="13.tutCSS.css">
+</head>
+
+<body>
+    <h3> This is a CSS tutorial </h3>
+    <!-- This below code shows us an example of inline CSS -->
+    <!-- <p style="color:red;">This tutorial will teach you CSS</p> -->
+    <p>This tutorial will teach you CSS</p>
+
+
+</body>
+
+</html>
