@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* This property will apply to all the paragraph<p> tags in the MARKUP
+
+        To specifially target a specific tag we use id of that tag which will apply properties only to it,
+        that is #SecondPtag {color: red
+
+        }
+        1. Target through ID.
+        2. Target through Class.
+        3. Target through norwal way,but this will target all the mentioned MARKUP tags in SELECTOR.*/
+
+        /* #secondPtag {
+        color: red;
+        } */
+        p {
+            border: 1px solid red;
+        }
+    </style>
+    <style>
+        /* When we want ot use class instead of id we can do it this way
+        
+           * To use multiple classes, this way 
+        */
+        /* .Second {
+            color: white
+        }
+
+        .backgrnd {
+            background-color: Black
+        } */
+    </style>
+    <style>
+        /* We can also group selectors this way:*/
+        footer,
+        span {
+            color: white;
+            background-color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>Simple para to demonstrate CSS selectors</p>
+    <p id="SecondPtag" class="Second backgrnd">Simple para to demonstrate CSS selectors</p>
+    <div>
+        <p>Simple para to demonstrate CSS selectors</p>
+        <span>This is span</span>
+    </div>
+    <br>
+    <footer>
+        This is footer
+    </footer>
+</body>
+
+</html>
