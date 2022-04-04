@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model, margin and padding</title>
+    <style>
+        /* Universal selector: Assigns some default values to the elements
+           */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgb(189, 215, 249);
+            border: 3px solid rgb(15, 15, 15);
+            padding: 40px;
+            /* margin: 34px; */
+            margin: 14px 35px;
+            border-radius: 30px;
+            width: 150px;
+        }
+
+        .container2 {
+            background-color: rgb(196, 218, 249);
+            border: 3px solid rgb(17, 17, 19);
+            /* We can also set the padding like this */
+            /* padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 50px;
+            padding-right: 50px; */
+            /* margin: 20px; */
+            /* Another way to set the padding in single line is this way
+               padding= top-left-bottom-right */
+            /* padding: 30px 30px 30px 30px; */
+
+            /* Another way is
+               padding: y(top/bottom) x(left/right) */
+            padding: 40px 40px;
+            /* Margin shorthand
+               margin: xpx ypx*/
+            margin: 14px 35px;
+            border-radius: 30px;
+            width: 240px;
+            box-sizing: border-box;
+            /* Margin types:
+
+               margin-top: ;
+               margin-left: ;
+               margin-right: ;
+               margin-bottom: ; */
+
+        }
+
+        body {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is h3</h3>
+        <p id="para1">lorem ipsum dolor sit amet lorem ipsum dolor</p>
+    </div>
+    <div class="container">
+        <h3>This is h3</h3>
+        <p id="para2">lorem ipsum dolor sit amet lorem ipsum dolor</p>
+    </div>
+    <div class="container">
+        <h3>This is h3</h3>
+        <p id="para3">lorem ipsum dolor sit amet lorem ipsum dolor</p>
+    </div>
+    <div class="container2">
+        <h3>This is h3</h3>
+        <p id="para1">lorem ipsum dolor sit amet lorem ipsum dolor</p>
+    </div>
+
+</body>
+
+</html>
