@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and Backgrounds</title>
+    <style>
+        #para1 {
+            background-color: red;
+            height: 200px;
+            width: 300px;
+            /* border-width: 3.5px;
+            border-color: green;
+            border-style: dashed; */
+
+            /*To wrte the above properties in a single line, BELOW */
+            border: 3.5px solid green;
+            border-radius: 6px;
+
+        }
+
+        #para2 {
+            /* To apply border on only one side */
+            background-color: rgb(220, 88, 6);
+            height: 200px;
+            width: 300px;
+            border-top: 15px solid rgb(10, 1, 1);
+            border-bottom: 15px solid rgb(239, 13, 13);
+            border-left: 15px solid rgb(53, 225, 14);
+            border-right: 15px solid rgb(125, 35, 241);
+            /* To set the radius of a specifically */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+
+        }
+
+        #para3 {
+            /* To apply a background image inside the markup element*/
+            color: white;
+            height: 100px;
+            width: 3000px;
+            /* Here we have picked the image from net, 
+               but we can also imort it from our from our local storage */
+            background-image: url('https://yt3.ggpht.com/yti/APfAmoHsZhjxHzChDoB3dWIIyW00rKlcakttdtp4B-orWg=s88-c-k-c0x00ffffff-no-rj-mo');
+            border: 2px solid red;
+            /* If the image is repeated, use the below line of code
+               background-repeat: repeat-x
+               background-repeat: repeat-y   */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-repeat: repeat-x; 
+               background-position: 12px top; 
+               background-position: 12px 12px;
+               background-position: centre top;
+               background-position: top center;
+               background-position: top top;
+               background-position: top left;
+               background-position: top right;
+               background-position: bottom left;
+               background-position: bottom right;
+               
+
+             */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+    <p id="para1">This is para1</p>
+    <p id="para2">This is para2</p>
+    <p id="para3">This is para3</p>
+
+</body>
+
+</html>
