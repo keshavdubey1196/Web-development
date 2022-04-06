@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(14, 1, 14);
+            /* To place the whole container in the center, use the following property:
+               margin: 0 auto   
+               
+            Note: This will adjust th location of the container
+            with respect to the left right location of the window that is in X COORDINATE.
+            
+            If we want to set the margin also in the Y COORDINATE, then:border: border: border:
+            
+            margin: 33px auto       Here 33px is the value in the y axis and auto assigns the value in the x coorindate*/
+            margin: 33px auto;
+            background: rgb(244, 222, 246);
+
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(252, 235, 235);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #Electronics {
+            float: right;
+            width: 48%;
+        }
+
+        #Stationary {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify
+        }
+
+        h1 {
+            margin: auto;
+            width: 460px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruits" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero
+                esse. Sit, temporibus, sapiente minima enim voluptatum reiciendis eum soluta accusamus explicabo,
+                asperiores dicta. Beatae quas deserunt accusamus officia iste?</p>
+
+        </div>
+        <br>
+        <div id="Electronics" class="item">
+            <h3>Electronics</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero
+                esse. Sit, temporibus, sapiente minima enim voluptatum reiciendis eum soluta accusamus explicabo,
+                asperiores dicta. Beatae quas deserunt accusamus officia iste?</p>
+
+        </div>
+        <br>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero
+                esse. Sit, temporibus, sapiente minima enim voluptatum reiciendis eum soluta accusamus explicabo,
+                asperiores dicta. Beatae quas deserunt accusamus officia iste?</p>
+
+        </div>
+        <div id="cars" class="item">
+            <h3>Stationary</h3>
+            <p id="Cars" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero
+                esse. Sit, temporibus, sapiente minima enim voluptatum reiciendis eum soluta accusamus explicabo,
+                asperiores dicta. Beatae quas deserunt accusamus officia iste?</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
