@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(192, 253, 238);
+            padding: 34px;
+            margin: 34px auto;
+            width: 700px;
+        }
+
+        a {
+            /* This property will remove the underline from the anchor tag (Read more) */
+            text-decoration: none;
+
+        }
+
+        /* This property will allow us to change the color of the font
+           when we will hover read more */
+        a:hover {
+            color: rgb(10, 214, 214);
+            background-color: rgb(18, 249, 68)
+        }
+
+        /* When we will goto the link and come back to the home page,
+           it will change the color of the button as it has been visited. */
+        a:visited {
+            background-color: rgb(244, 11, 11);
+        }
+
+        a:active {
+            background-color: purple;
+        }
+
+        .btn {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(5, 5, 5);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+            color: rgb(6, 6, 6);
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont1" class="container">
+        <h3>This is heading h3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet eum expedita beatae aliquid, fuga
+            voluptatem assumenda repellat molestiae tenetur molestias tempora perspiciatis asperiores voluptatum
+            corporis, optio saepe dolor. Nam ea deserunt iste facilis.</p>
+        <!-- If we want to apply a button inside the container:
+             For example: Read more button -->
+        <a href="https://www.udemy.com/" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+
+
+</body>
+
+</html>
