@@ -1,0 +1,58 @@
+<!-------------------------------------- 3.Fixed Positioning --------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using position property of CSS</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3500px;
+        }
+
+
+        .box {
+
+            border: 2px solid black;
+            width: 150px;
+            height: 90px;
+            margin: 10px;
+            display: inline-block;
+            /* This will allign all the boxes in same direction[left to right on the top]*/
+
+        }
+
+
+        #box4 {
+            /* Fixed positioning 
+               By this the box will move along the scrolling action
+               Changes the postion of the box W.R.T browser window
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+            To place the box at the bottom, like a chat box or button*/
+
+            /* ------Sticky positioning */
+            position: sticky;
+            top: 1px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box*4  will give us four boxes with class and id =box-->
+    <!-- NOTE:  id cannot be the same for all the boxes, so we change it -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">Chat with us</div>
+    </div>
+</body>
+
+</html>

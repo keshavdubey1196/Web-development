@@ -1,0 +1,50 @@
+<!-- ---------------------------------- 2. Relative positioning------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using position property of CSS</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+        }
+
+
+        .box {
+
+            border: 2px solid black;
+            width: 150px;
+            height: 90px;
+            margin: 10px;
+            display: inline-block;
+            /* This will allign all the boxes in same direction[left to right on the top]*/
+
+        }
+
+
+        #box3 {
+            /* Relative positioning */
+            position: relative;
+            top: 30px;
+            left: 34px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box*4  will give us four boxes with class and id =box-->
+    <!-- NOTE:  id cannot be the same for all the boxes, so we change it -->
+    <div class="container">
+        <div class="box" id="box1">keshav</div>
+        <div class="box" id="box2">loves</div>
+        <div class="box" id="box3">coding</div>
+        <div class="box" id="box4">in Python</div>
+    </div>
+</body>
+
+</html>

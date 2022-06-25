@@ -1,0 +1,60 @@
+<!-- Understanding the position property using one of the blocks
+Position property: Three types:-
+   1. Static[By default set previously] 
+
+   2. Absolute: the specified box will change its postion with respect to main container,
+      gaps will be formed W.R.T containier box
+
+   3. Relative: the specified box will change its postion with respect to its original position,
+      gaps will be formed W.R.T its original position \
+   
+   4. Fixed positioning -->
+
+<!-------------------------------- 1. Absolute positioning ------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using position property of CSS</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+        }
+
+
+        .box {
+
+            border: 2px solid blue;
+            width: 150px;
+            height: 90px;
+            margin: 10px;
+            display: inline-block;
+            /* This will allign all the boxes in same direction[left to right on the top]*/
+        }
+
+
+        #box3 {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box*4  will give us four boxes with class and id =box-->
+    <!-- NOTE:  id cannot be the same for all the boxes, so we change it -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
