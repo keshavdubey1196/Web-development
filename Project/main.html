@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football store</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("images/1.jpg");
+
+    }
+
+    .left {
+        position: absolute;
+        left: 27px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+
+    .left img {
+        width: 30px;
+    }
+
+    .mid {
+        /* To place a container at centre position, below display,width, and margin properties are compulsory */
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        border: 2px solid green;
+    }
+
+    .right {
+        position: absolute;
+        right: 27px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: white;
+        /*This will remove the underlines from a tags*/
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        /* padding: 34px 23px; */
+        /* padding: 5px 5p; */
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: black
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- container for logo -->
+        <div class="left">
+            <img src="images/3.png" alt="loading">
+            <div>Football</div>
+        </div>
+        <!-- container for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- container for buttons -->
+        <div class="right">
+            I am right
+        </div>
+    </header>
+</body>
+
+</html>
