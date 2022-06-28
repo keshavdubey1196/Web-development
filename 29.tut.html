@@ -1,0 +1,56 @@
+<!-- Visibility and Z index -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Visibility and Z index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            /* Z-INDEX: This is a method which will allow us to overlap on eelememt upon other,
+               Z-INDEX only works when the position of the element is relative and not static(default).
+               Check below code for the implementation of this method.*/
+            position: relative;
+            z-index: 35;
+            background-color: skyblue;
+        }
+
+        #box2 {
+            /*will hide the element but show its occupied area*/
+            /* visibility: hidden; */
+            /* will hide the element and its occupied area*/
+            /* display: none; */
+            position: relative;
+            z-index: -1;
+            background-color: rgb(1, 55, 76);
+        }
+
+        #box3 {
+            display: block;
+            margin: 12px 0px;
+            background-color: rgb(231, 239, 203);
+        }
+
+        #box4 {
+            background-color: rgb(252, 213, 244);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box$*4   $=1,2,3,4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
