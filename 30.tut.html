@@ -1,0 +1,102 @@
+<!--Flax Box- Important topic 
+
+    1) Flexbox is 1-D layout method for laying out items in rows or columns
+    2) FlexBox= Flexible+Box
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox container</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* FlexBox properties for flex container */
+            /* flex-direction: row; */
+            /* By Default It is ROW */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* To wrap the flex-items */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row wrap;
+            /*shorthand for flex-direction and wrap */
+
+            /* To align all the items of the container to centre */
+            /* justify-content: center; */
+            /* To give equal spaces between items but not on the edges of the cotainer */
+            /* justify-content: space-between; */
+            /* To give equal spaces between items and the edges of the cotainer */
+            /* justify-content: space-evenly; */
+            /* To give equal spaces around the items, edges of the cotainer */
+            /* justify-content: space-around; */
+
+            /* Align properties:
+            These properties aligns the items positioning w.r.t yhe container */
+            /* align-items: center; Places all the items to the centre of the container*/
+            /* align-items: center; */
+            /* align-items: flex-end; Places all the items at the bottom  */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            background-color: rgb(252, 217, 252);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* #item1 { */
+        /* Flex properties for specific items */
+        /* order: 1; */
+        /*Order changes the postion of the item, Higher order higher position */
+        /* flex-grow: 2; */
+        /* flex-shrink: 3; */
+
+
+        /* } */
+
+        #item2 {
+            /* flex-grow: 3; */
+            flex-basis: 300px;
+            /* NOTE: If the flex-direction is row, flex-basis will fix the width of the current item
+                     If the flex-direction is column, flex-basis will fix the height of the current item */
+        }
+
+        #item3 {
+            /* align-self: flex-start; */
+            /* align-self: center; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox container</h1>
+    <div class="container">
+        <!-- div.item#item$*6 -->
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div> -->
+        <!-- <div class="item" id="item5">Fifth Box</div> -->
+        <!-- <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+
+</body>
+
+</html>
